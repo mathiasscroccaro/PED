@@ -1,13 +1,12 @@
-* C:\Users\mathias\Desktop\PED\LISTA1\ex1.sch
+* C:\Users\mathias\Desktop\PED\LISTA1\ex1\ex1.sch
 
 * Schematics Version 9.1 - Web Update 1
-* Thu Jul 19 13:28:16 2018
+* Tue Oct 09 16:28:51 2018
 
 
 
 ** Analysis setup **
-.DC LIN V_VGS 0 5 0.1 
-.LIB "C:\Users\mathias\Desktop\PED\LISTA1\ex1.lib"
+.ac DEC 101 1 1G
 
 
 * From [PSPICE NETLIST] section of pspiceev.ini:

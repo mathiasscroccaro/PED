@@ -11,5 +11,5 @@ R_Rsig         Vi $N_0004  10k
 V_VDD         $N_0001 0 10V
 V_Vi         Vi 0 DC 0 AC 0.1
 +SIN 0 0.1 1k 0 0 0
-R_RD         $N_0003 $N_0001  10k  
 R_RL         0 Vo  10k  
+R_RD         $N_0003 $N_0001  12k  

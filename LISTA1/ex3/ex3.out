@@ -1,5 +1,5 @@
 
-**** 08/13/18 17:30:49 *********** Evaluation PSpice (Nov 1999) **************
+**** 10/09/18 16:01:55 *********** Evaluation PSpice (Nov 1999) **************
 
  * C:\Users\mathias\Desktop\PED\LISTA1\ex3\ex3.sch
 
@@ -13,7 +13,7 @@
 
 
 * Schematics Version 9.1 - Web Update 1
-* Mon Aug 13 17:30:45 2018
+* Tue Oct 09 16:01:53 2018
 
 
 
@@ -42,8 +42,8 @@ R_Rsig         Vi $N_0004  10k
 V_VDD         $N_0001 0 10V
 V_Vi         Vi 0 DC 0 AC 0.1
 +SIN 0 0.1 1k 0 0 0
-R_RD         $N_0003 $N_0001  10k  
 R_RL         0 Vo  10k  
+R_RD         $N_0003 $N_0001  12k  
 
 **** RESUMING ex3.cir ****
 .INC "ex3.als"
@@ -62,8 +62,8 @@ C_Ci            Ci(1=$N_0004 2=$N_0002 )
 R_Rsig          Rsig(1=Vi 2=$N_0004 )
 V_VDD           VDD(+=$N_0001 -=0 )
 V_Vi            Vi(+=Vi -=0 )
-R_RD            RD(1=$N_0003 2=$N_0001 )
 R_RL            RL(1=0 2=Vo )
+R_RD            RD(1=$N_0003 2=$N_0001 )
 _    _(Vo=Vo)
 _    _(Vi=Vi)
 .ENDALIASES
@@ -75,7 +75,7 @@ _    _(Vi=Vi)
 
 .END
 
-**** 08/13/18 17:30:49 *********** Evaluation PSpice (Nov 1999) **************
+**** 10/09/18 16:01:55 *********** Evaluation PSpice (Nov 1999) **************
 
  * C:\Users\mathias\Desktop\PED\LISTA1\ex3\ex3.sch
 
@@ -123,7 +123,7 @@ _    _(Vi=Vi)
        XPART    0            
 
 
-**** 08/13/18 17:30:49 *********** Evaluation PSpice (Nov 1999) **************
+**** 10/09/18 16:01:55 *********** Evaluation PSpice (Nov 1999) **************
 
  * C:\Users\mathias\Desktop\PED\LISTA1\ex3\ex3.sch
 
@@ -140,7 +140,7 @@ _    _(Vi=Vi)
 
 (   Vi)    0.0000  (   Vo)    0.0000  ($N_0001)   10.0000                       
 
-($N_0002)     .9091                   ($N_0003)    6.9058                       
+($N_0002)     .9091                   ($N_0003)    6.2870                       
 
 ($N_0004)    0.0000                   
 
@@ -156,7 +156,7 @@ _    _(Vi=Vi)
     TOTAL POWER DISSIPATION   3.10E-03  WATTS
 
 
-**** 08/13/18 17:30:49 *********** Evaluation PSpice (Nov 1999) **************
+**** 10/09/18 16:01:55 *********** Evaluation PSpice (Nov 1999) **************
 
  * C:\Users\mathias\Desktop\PED\LISTA1\ex3\ex3.sch
 
@@ -173,7 +173,7 @@ _    _(Vi=Vi)
 
 (   Vi)    0.0000  (   Vo)    0.0000  ($N_0001)   10.0000                       
 
-($N_0002)     .9091                   ($N_0003)    6.9058                       
+($N_0002)     .9091                   ($N_0003)    6.2870                       
 
 ($N_0004)    0.0000                   
 
@@ -192,5 +192,5 @@ _    _(Vi=Vi)
 
           JOB CONCLUDED
 
-          TOTAL JOB TIME             .11
+          TOTAL JOB TIME             .08
 

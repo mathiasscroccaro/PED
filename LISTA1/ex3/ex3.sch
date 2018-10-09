@@ -1,4 +1,4 @@
-*version 9.1 854622458
+*version 9.1 4246123411
 u 115
 M? 2
 R? 6
@@ -32,11 +32,11 @@ connectViaLocalLabels 0
 NoStim4ExtIFPortsWarnings 1
 AutoGenStim4ExtIFPorts 1
 @index
-pageloc 1 0 4639 
+pageloc 1 0 4671 
 @status
-n 0 118:07:13:17:30:45;1534192245 e 
-s 2832 118:07:13:17:30:48;1534192248 e 
-c 118:07:13:17:30:41;1534192241
+n 0 118:09:09:16:01:53;1539111713 e 
+s 2832 118:09:09:16:01:55;1539111715 e 
+c 118:09:09:16:01:46;1539111706
 *page 1 0 970 720 iA
 @ports
 port 31 GND_EARTH 200 290 h
@@ -93,13 +93,6 @@ a 1 u 0 0 0 0 hcn 100 VOFF=0
 a 1 u 0 0 0 0 hcn 100 VAMPL=0.1
 a 0 x 0:13 0 0 0 hln 100 PKGREF=Vi
 a 1 xp 9 0 20 10 hcn 100 REFDES=Vi
-part 6 r 280 170 v
-a 0 sp 0 0 0 10 hlb 100 PART=r
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 x 0:13 0 0 0 hln 100 PKGREF=RD
-a 0 xp 9 0 15 0 hln 100 REFDES=RD
-a 0 u 13 0 15 35 hln 100 VALUE=10k
 part 7 r 360 250 v
 a 0 sp 0 0 0 10 hlb 100 PART=r
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
@@ -107,12 +100,20 @@ a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 x 0:13 0 0 0 hln 100 PKGREF=RL
 a 0 xp 9 0 15 0 hln 100 REFDES=RL
 a 0 u 13 0 15 35 hln 100 VALUE=10k
+part 6 r 280 170 v
+a 0 sp 0 0 0 10 hlb 100 PART=r
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=RD
+a 0 xp 9 0 15 0 hln 100 REFDES=RD
+a 0 u 13 0 15 35 hln 100 VALUE=12k
 part 1 titleblk 970 720 h
 a 1 s 13 0 350 10 hcn 100 PAGESIZE=A
 a 1 s 13 0 180 60 hcn 100 PAGETITLE=
 a 1 s 13 0 340 95 hrn 100 PAGECOUNT=1
 a 1 s 13 0 300 95 hrn 100 PAGENO=1
 part 114 nodeMarker 360 180 h
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 a 0 0 4 22 hlb 100 LABEL=5
 @conn
