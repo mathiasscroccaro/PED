@@ -4,16 +4,16 @@ Aqui estao os arquivos de simulacao quando participei do Programa de Estagio Doc
 
 ## Lista 1
 
-Nesta lista e' simulado um Emissor Comum, alem de outros circuitos conceituais, com modelo de pequenos sinais
+Nesta lista é simulado um Emissor Comum, alem de outros circuitos conceituais, com modelo de pequenos sinais
 
 ## Lista 2
 
-Nao lembro o que e' simulado nesta lista
+Nao lembro o que é simulado nesta lista
 
-## Amp op 2 estagios
+## Lista sala de aula 
 
-E' simulado um amp op de dois estagios
+É simulado um amp op de dois estagios
 
 ## Lista final
 
-Falta faze-la ¬¬
+É simulado um amp op com dois estágios, com capacitância de Miller
