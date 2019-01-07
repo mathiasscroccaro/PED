@@ -1,0 +1,23 @@
+* Schematics Netlist *
+
+
+
+V_V2         Vdd 0 7.5V
+V_V1         0 Vss 7.5V
+V_V3         V+ 0 DC 0V AC 1uV 
+M_M4         $N_0001 $N_0001 Vss Vss MbreakN-X           
+C_C1         Vout1 Vout2  1f  
+R_R1         $N_0001 $N_0002  1.06e6  
+M_M10         $N_0003 $N_0001 Vss Vss MbreakN-X           
+M_M16         $N_0004 0 $N_0003 $N_0003 MbreakN-X   
++ W=1.29e-6         
+M_M15         Vout1 V+ $N_0003 $N_0003 MbreakN-X   
++ W=1.29e-6         
+M_M9         $N_0002 $N_0002 Vdd Vdd MbreakP-X           
+M_M11         Vout2 $N_0001 Vss Vss MbreakN-X           
+M_M14         Vout2 Vout1 Vdd Vdd MbreakP-X   
++ W=2.12e-6         
+M_M13         Vout1 $N_0004 Vdd Vdd MbreakP-X   
++ W=1.06e-6         
+M_M12         $N_0004 $N_0004 Vdd Vdd MbreakP-X   
++ W=1.06e-6         

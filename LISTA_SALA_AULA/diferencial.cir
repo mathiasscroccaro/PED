@@ -1,0 +1,23 @@
+* C:\Users\mathias\Desktop\PED\LISTA_SALA_AULA\diferencial.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Dec 05 18:01:29 2018
+
+
+
+** Analysis setup **
+.ac DEC 100 0.1 1G
+.LIB "C:\Users\mathias\Desktop\PED\LISTA_SALA_AULA\diferencial.lib"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "diferencial.net"
+.INC "diferencial.als"
+
+
+.probe
+
+
+.END
