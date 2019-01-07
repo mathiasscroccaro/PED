@@ -1,0 +1,198 @@
+
+**** 08/13/18 16:22:14 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA2\ex2\ex2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Aug 13 16:21:15 2018
+
+
+
+** Analysis setup **
+.tran 0ns 3m 0 1u
+.LIB "C:\Users\mathias\Desktop\PED\LISTA2\ex2\ex2.lib"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "ex2.net"
+
+**** INCLUDING ex2.net ****
+* Schematics Netlist *
+
+
+
+V_V2         0 Vss 7.5V
+V_V1         Vcc 0 7.5V
+M_M6         $N_0001 $N_0001 Vcc Vcc Mbreakp           
+M_M5         $N_0002 $N_0001 Vcc Vcc Mbreakp           
+M_M4         $N_0001 V+ $N_0003 $N_0003 MbreakN-X           
+M_M3         $N_0002 0 $N_0003 $N_0003 MbreakN-X1           
+V_V4         V+ 0 DC 0V AC 0V
++SIN 0V 1u 1k 0 0 0
+M_M1         $N_0004 $N_0004 Vss Vss MbreakN-X3           
+M_M7         $N_0005 $N_0005 Vcc Vcc MbreakP-X           
+M_M2         $N_0003 $N_0004 Vss Vss MbreakN-X2           
+R_R1         $N_0004 $N_0005  1k  
+
+**** RESUMING ex2.cir ****
+.INC "ex2.als"
+
+
+
+**** INCLUDING ex2.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V2            V2(+=0 -=Vss )
+V_V1            V1(+=Vcc -=0 )
+M_M6            M6(d=$N_0001 g=$N_0001 s=Vcc s=Vcc )
+M_M5            M5(d=$N_0002 g=$N_0001 s=Vcc s=Vcc )
+M_M4            M4(d=$N_0001 g=V+ s=$N_0003 s=$N_0003 )
+M_M3            M3(d=$N_0002 g=0 s=$N_0003 s=$N_0003 )
+V_V4            V4(+=V+ -=0 )
+M_M1            M1(d=$N_0004 g=$N_0004 s=Vss s=Vss )
+M_M7            M7(d=$N_0005 g=$N_0005 s=Vcc s=Vcc )
+M_M2            M2(d=$N_0003 g=$N_0004 s=Vss s=Vss )
+R_R1            R1(1=$N_0004 2=$N_0005 )
+_    _(Vcc=Vcc)
+_    _(V+=V+)
+_    _(V-=0)
+_    _(Vss=Vss)
+.ENDALIASES
+
+
+**** RESUMING ex2.cir ****
+.probe
+
+
+.END
+
+**** 08/13/18 16:22:14 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA2\ex2\ex2.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakp         MbreakN-X       MbreakN-X1      MbreakN-X3      
+               PMOS            NMOS            NMOS            NMOS            
+       LEVEL    1               1               1               1            
+           L    1.000000E-06    1.000000E-06    1.000000E-06    1.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    -.5              .5              .5              .5          
+          KP   10.000000E-06   10.000000E-06   10.000000E-06   10.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA     .01             .01             .01             .01         
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+         CBD    1.000000E-12    1.000000E-12    1.000000E-12    1.000000E-12 
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    1.000000E-15    1.000000E-15    1.000000E-15    1.000000E-15 
+        CGDO    1.000000E-15    1.000000E-15    1.000000E-15    1.000000E-15 
+        CGBO    0               0               0               0            
+         TOX    0               0               0               0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    0               0               0               0            
+       XPART    0               0               0               0            
+
+
+               MbreakP-X       MbreakN-X2      
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L    1.000000E-06    1.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    -.5              .5          
+          KP   10.000000E-06   10.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .01             .01         
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD    1.000000E-12    1.000000E-12 
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    1.000000E-15    1.000000E-15 
+        CGDO    1.000000E-15    1.000000E-15 
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    0               0            
+       XPART    0               0            
+
+
+**** 08/13/18 16:22:14 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA2\ex2\ex2.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)    0.0000  (  Vcc)    7.5000  (  Vss)   -7.5000  ($N_0001)    4.4304    
+
+($N_0002)    4.4304                   ($N_0003)   -3.0167                       
+
+($N_0004)   -3.3907                   ($N_0005)    3.3907                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.359E-02
+    V_V1        -1.359E-02
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.04E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .11
+

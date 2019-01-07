@@ -1,0 +1,12 @@
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 5V
+R_R2         Vout $N_0001  10k  
+C_C2         0 Vout  80p  
+R_R1         Vin $N_0002  5k  
+C_C1         0 $N_0002  25p  
+V_V4         Vin 0 DC 0V AC 1V 
+M_M1         Vout $N_0003 $N_0002 0 MbreakN-X           
+V_V2         $N_0003 0 1.8V

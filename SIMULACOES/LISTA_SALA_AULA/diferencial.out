@@ -1,0 +1,168 @@
+
+**** 12/05/18 18:01:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA_SALA_AULA\diferencial.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Dec 05 18:01:29 2018
+
+
+
+** Analysis setup **
+.ac DEC 100 0.1 1G
+.LIB "C:\Users\mathias\Desktop\PED\LISTA_SALA_AULA\diferencial.lib"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "diferencial.net"
+
+**** INCLUDING diferencial.net ****
+* Schematics Netlist *
+
+
+
+V_V2         0 Vss 7.5V
+V_V1         Vdd 0 7.5V
+V_V4         V+ 0 DC 0V AC 1uV 
+M_M15         Vout $N_0001 Vdd Vdd MbreakP           
+M_M16         $N_0001 $N_0001 Vdd Vdd MbreakP           
+M_M11         $N_0002 $N_0002 Vss Vss MbreakN-X1           
+M_M8         $N_0003 $N_0002 Vss Vss MbreakN-X1           
+M_M17         $N_0004 $N_0004 Vdd Vdd Mbreakp           
+R_R1         $N_0002 $N_0004  891k  
+M_M10         $N_0001 0 $N_0003 $N_0003 MbreakN-X1   
++ W=1.29u         
+M_M9         Vout V+ $N_0003 $N_0003 MbreakN-X1   
++ W=1.29u         
+
+**** RESUMING diferencial.cir ****
+.INC "diferencial.als"
+
+
+
+**** INCLUDING diferencial.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V2            V2(+=0 -=Vss )
+V_V1            V1(+=Vdd -=0 )
+V_V4            V4(+=V+ -=0 )
+M_M15           M15(d=Vout g=$N_0001 s=Vdd s=Vdd )
+M_M16           M16(d=$N_0001 g=$N_0001 s=Vdd s=Vdd )
+M_M11           M11(d=$N_0002 g=$N_0002 s=Vss s=Vss )
+M_M8            M8(d=$N_0003 g=$N_0002 s=Vss s=Vss )
+M_M17           M17(d=$N_0004 g=$N_0004 s=Vdd s=Vdd )
+R_R1            R1(1=$N_0002 2=$N_0004 )
+M_M10           M10(d=$N_0001 g=0 s=$N_0003 s=$N_0003 )
+M_M9            M9(d=Vout g=V+ s=$N_0003 s=$N_0003 )
+_    _(Vdd=Vdd)
+_    _(Vout=Vout)
+_    _(Vss=Vss)
+_    _(V-=0)
+_    _(V+=V+)
+_    _(Vin=V+)
+.ENDALIASES
+
+
+**** RESUMING diferencial.cir ****
+.probe
+
+
+.END
+
+**** 12/05/18 18:01:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA_SALA_AULA\diferencial.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakP         MbreakN-X1      
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L    1.000000E-06    1.000000E-06 
+           W    1.000000E-06    1.000000E-06 
+         VTO    -.5              .5          
+          KP   10.000000E-06   10.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .01             .01         
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD    1.000000E-12    1.000000E-12 
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    1.000000E-15    1.000000E-15 
+        CGDO    1.000000E-15    1.000000E-15 
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    0               0            
+       XPART    0               0            
+
+
+**** 12/05/18 18:01:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA_SALA_AULA\diferencial.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)    0.0000  (  Vdd)    7.5000  (  Vss)   -7.5000  ( Vout)    5.8814      
+
+($N_0001)    5.8814                   ($N_0002)   -5.4514                       
+
+($N_0003)   -1.4583                   ($N_0004)    5.4514                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.495E-05
+    V_V1        -2.495E-05
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   3.74E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .11
+

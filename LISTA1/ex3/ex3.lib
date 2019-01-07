@@ -1,4 +1,0 @@
-.model NMOS0P5 NMOS Level=1 Gamma=0.5 Tox=9.5n Uo=460 Phi=0.8 Kp=170.1u 
-+ W=23.3u L=0.44u Vto=0.7 Pb=0.9 Mj=0.5 Cgso=0.4n Cgdo=0.4n Cgbo=0.38u 
-+ Ld=0.08u Js=10u Cj=0.57m Mj=0.5 Cjsw=0.12u Mjsw=0.4 
-*$

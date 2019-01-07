@@ -1,0 +1,22 @@
+* C:\Users\mathias\Desktop\PED\LISTA1\ex1\ex1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Oct 09 16:28:51 2018
+
+
+
+** Analysis setup **
+.ac DEC 101 1 1G
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "ex1.net"
+.INC "ex1.als"
+
+
+.probe
+
+
+.END

@@ -1,0 +1,12 @@
+.model MbreakP-X PMOS VTO=-0.5 L=1u kp=10u lambda=0.01 Cbd=1p Cgdo=1f Cgso=1f 
+*$
+.model Mbreakp PMOS VTO=-0.5 L=1u kp=10u lambda=0.01 Cbd=1p Cgdo=1f Cgso=1f 
+*$
+.model MbreakN-X NMOS VTO=0.5 L=1u kp=10u lambda=0.01 Cbd=1p Cgdo=1f Cgso=1f 
+*$
+.model MbreakN-X1 NMOS VTO=0.5 L=1u kp=10u lambda=0.01 Cbd=1p Cgdo=1f Cgso=1f 
+*$
+.model MbreakN-X2 NMOS VTO=0.5 L=1u kp=10u lambda=0.01 Cbd=1p Cgdo=1f Cgso=1f 
+*$
+.model MbreakN-X3 NMOS VTO=0.5 L=1u kp=10u lambda=0.01 Cbd=1p Cgdo=1f Cgso=1f 
+*$

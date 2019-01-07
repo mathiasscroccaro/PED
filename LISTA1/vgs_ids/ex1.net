@@ -1,9 +1,0 @@
-* Schematics Netlist *
-
-
-
-R_R1         0 $N_0001  1k  
-V_VGS         $N_0002 0 0V
-M_M1         $N_0003 $N_0002 $N_0001 0 MbreakN-X           
-R_R2         $N_0003 $N_0004  5k  
-V_VDS         $N_0004 0 1V

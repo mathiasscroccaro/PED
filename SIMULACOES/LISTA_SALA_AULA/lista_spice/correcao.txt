@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%   Veridito e avaliação das listas de exercícios
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Bruno Fernando Coyado - RA145512
+Haryton D. Pereira - RA141650
+Gustavo Granela Plensack - RA155662
+Gustavo Alves de Souza - RA169206
+
+Nota: 10;
+Comentários: 
+- Alteraram o ganho do estágio amplificador por meio da corrente de polarização. Reforçar conceito de economia de energia em integrados
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Eduardo Guimarães - 166754
+Maurício Abreu - 174725
+
+Nota: 3;
+Comentários: 
+- Erraram na identificação do espelho de corrente e fonte de corrente (-2);
+- Não apresentaram os resultados da simulação, simplesmente nenhum gráfico;
+- Não mostraram as modificações no circuito que foram necessárias para atingir ao ganho desejado (-5);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Matheus F. Bacha dos Santos - RA 174516
+Flávia Degelo Camilo - RA 167611
+Gabriel Callizo Magalhães - RA 167792
+
+Nota: 10;
+Comentários: 
+- Fizeram o relatório em Latex. A forma do relatório está bem apresentada.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+157555 Vitor Mendes do Amaral 
+157981 Henrique Buglia 
+160237 Raone Guedes Souza Cruz 
+155291 Felipe Alan Lobon Ruiz
+
+Nota: 5;
+Comentários:
+- Não citaram o espelho de corrente;
+- Não realizado cálculo correto para o ganho;
+- Péssima apresentação dos cálculos;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Geovani Augusto de Souza Alves 150932 
+Ígor Lívio Figueiredo Moreira 150660 
+Rafael Seto Takeguma Utikawa 151072 
+Victor Cordeiro de Arruda 177909 
+
+Nota: 7;
+Comentários:
+- Erraram no dimensionamento do resistor. Não entenderam o conceito da fonte de corrente MOS
+- Alteraram o ganho do estágio amplificador por meio da corrente de polarização. Reforçar conceito de economia de energia em integrados
+- Relatório bem organizado
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+José Carlos Ferreira RA: 170860 
+Leandro Setsuo Watanabe RA: 171860 
+Matheus Freire RodriguesRA: 174533 
+Murillo Jeronimo Capodalio RA: 174949 
+
+Nota: 8.5 
+Comentários:
+- Erraram na identificação dos blocos do circuito;
+- Não atribuiram ao ro a diferença de corrente entre Iref e Id do amplificador. Justificaram erroneamento o fenônemno a erros do software. 
+- Fizeram relatório em Latex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Breno Levi Correa - RA 145453 
+Karla Carmen Darlene Bautista Luna - RA 149457 
+Lídia Guimarães Gusmão - RA 172323 
+Pedro Luiz Paulucci Carnieto - RA 175869 
+
+Nota: 8.5
+Comentários:
+- Não identificaram os blocos do circuito
+- Fizeram relatório em Latex. Muito boa organização dos dados
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Murilo Altheman Pereira 073530 
+Guilherme Guerra Martins 173753 
+Stéfano de Checchi 177223 
+Laura Raphael R. Pereira 178193
+
+Nota: 8
+Comentários:
+- Faltou identificar o espelho de corrente
+- Erraram no cálculo da resistência
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Guilherme C. Pupio - 168958 
+Helder J. Vieira - 169496 
+Fabio Campanholo - 167062 
+Murilo F. Cassiani - 174968
+
+Nota: 6
+comentários:
+- Faltou identificar o espelho de corrente;
+- Relatório mal escrito, sem apresentação completa dos cálculos
+
+###############################################################################
+Gustavo Lazero Deçordi RA: 088967 
+Lucas Batagini Brito RA: 095831 
+Pedro Henrique de Sena Bezerra RA: 175766 
+
+Nota: 9
+Comentários:
+- Faltou identificar o espelho de corrente;
+- Relatório um pouco confuso, mas houve uma tentativa de análise dos fenômenos
+
+###############################################################################
+Joa˜o Victor Gitti 155601 
+Ju´lio Pasinatto 171329 
+Leonardo Mori 172035 
+Tharik Moreira Jahel 177561
+
+Nota: 9
+Comentários:
+- Não identificaram o espelho de corrente
+- Faltou detalhar o procedimento

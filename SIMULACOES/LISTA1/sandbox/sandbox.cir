@@ -1,0 +1,23 @@
+* C:\Users\mathias\Desktop\PED\LISTA1\sandbox\sandbox.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Sep 14 11:04:54 2018
+
+
+
+** Analysis setup **
+.ac DEC 100 10 1Ghz
+.LIB "C:\Users\mathias\Desktop\PED\LISTA1\sandbox\sandbox.lib"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "sandbox.net"
+.INC "sandbox.als"
+
+
+.probe
+
+
+.END

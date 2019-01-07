@@ -1,0 +1,244 @@
+
+**** 12/10/18 17:53:03 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA_FINAL\lista_final.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Dec 10 17:41:55 2018
+
+
+
+** Analysis setup **
+.ac DEC 101 0.1 1e9
+.OP 
+.LIB "C:\Users\mathias\Desktop\PED\LISTA_FINAL\lista_final.lib"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "lista_final.net"
+
+**** INCLUDING lista_final.net ****
+* Schematics Netlist *
+
+
+
+V_V2         Vdd 0 7.5V
+V_V1         0 Vss 7.5V
+V_V3         V+ 0 DC 0V AC 1uV 
+M_M4         $N_0001 $N_0001 Vss Vss MbreakN-X           
+C_C1         Vout1 Vout2  1f  
+R_R1         $N_0001 $N_0002  1.06e6  
+M_M10         $N_0003 $N_0001 Vss Vss MbreakN-X           
+M_M16         $N_0004 0 $N_0003 $N_0003 MbreakN-X   
++ W=1.29e-6         
+M_M15         Vout1 V+ $N_0003 $N_0003 MbreakN-X   
++ W=1.29e-6         
+M_M9         $N_0002 $N_0002 Vdd Vdd MbreakP-X           
+M_M11         Vout2 $N_0001 Vss Vss MbreakN-X           
+M_M14         Vout2 Vout1 Vdd Vdd MbreakP-X   
++ W=2.12e-6         
+M_M13         Vout1 $N_0004 Vdd Vdd MbreakP-X   
++ W=1.06e-6         
+M_M12         $N_0004 $N_0004 Vdd Vdd MbreakP-X   
++ W=1.06e-6         
+
+**** RESUMING lista_final.cir ****
+.INC "lista_final.als"
+
+
+
+**** INCLUDING lista_final.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V2            V2(+=Vdd -=0 )
+V_V1            V1(+=0 -=Vss )
+V_V3            V3(+=V+ -=0 )
+M_M4            M4(d=$N_0001 g=$N_0001 s=Vss s=Vss )
+C_C1            C1(1=Vout1 2=Vout2 )
+R_R1            R1(1=$N_0001 2=$N_0002 )
+M_M10           M10(d=$N_0003 g=$N_0001 s=Vss s=Vss )
+M_M16           M16(d=$N_0004 g=0 s=$N_0003 s=$N_0003 )
+M_M15           M15(d=Vout1 g=V+ s=$N_0003 s=$N_0003 )
+M_M9            M9(d=$N_0002 g=$N_0002 s=Vdd s=Vdd )
+M_M11           M11(d=Vout2 g=$N_0001 s=Vss s=Vss )
+M_M14           M14(d=Vout2 g=Vout1 s=Vdd s=Vdd )
+M_M13           M13(d=Vout1 g=$N_0004 s=Vdd s=Vdd )
+M_M12           M12(d=$N_0004 g=$N_0004 s=Vdd s=Vdd )
+_    _(Vout1=Vout1)
+_    _(Vout2=Vout2)
+_    _(V-=0)
+_    _(V+=V+)
+_    _(Vin=V+)
+_    _(Vss=Vss)
+_    _(Vdd=Vdd)
+.ENDALIASES
+
+
+**** RESUMING lista_final.cir ****
+.probe
+
+
+.END
+
+**** 12/10/18 17:53:03 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA_FINAL\lista_final.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakN-X       MbreakP-X       
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L    1.000000E-06    1.000000E-06 
+           W   10.000000E-06   10.000000E-06 
+         VTO     .5             -.5          
+          KP   10.000000E-06   10.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .01             .01         
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD    1.000000E-12    1.000000E-12 
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    1.000000E-15    1.000000E-15 
+        CGDO    1.000000E-15    1.000000E-15 
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    0               0            
+       XPART    0               0            
+
+
+**** 12/10/18 17:53:03 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA_FINAL\lista_final.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)    0.0000  (  Vdd)    7.5000  (  Vss)   -7.5000  (Vout1)    5.9059      
+
+(Vout2)    2.2994  ($N_0001)   -6.5069                   ($N_0002)    6.5069    
+
+($N_0003)   -1.4647                   ($N_0004)    5.9059                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -3.852E-05
+    V_V1        -3.852E-05
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.78E-04  WATTS
+
+
+**** 12/10/18 17:53:03 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\mathias\Desktop\PED\LISTA_FINAL\lista_final.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** MOSFETS
+
+
+NAME         M_M4        M_M10       M_M16       M_M15       M_M9      
+MODEL        MbreakN-X   MbreakN-X   MbreakN-X   MbreakN-X   MbreakP-X 
+ID           1.23E-05    1.29E-05    6.45E-06    6.45E-06   -1.23E-05 
+VGS          9.93E-01    9.93E-01    1.46E+00    1.46E+00   -9.93E-01 
+VDS          9.93E-01    6.04E+00    7.37E+00    7.37E+00   -9.93E-01 
+VBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+VTH          5.00E-01    5.00E-01    5.00E-01    5.00E-01   -5.00E-01 
+VDSAT        4.93E-01    4.93E-01    9.65E-01    9.65E-01   -4.93E-01 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+GM           4.98E-05    5.23E-05    1.34E-05    1.34E-05    4.98E-05 
+GDS          1.22E-07    1.22E-07    6.00E-08    6.00E-08    1.22E-07 
+GMB          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBD          6.68E-13    3.42E-13    3.13E-13    3.13E-13    6.68E-13 
+CBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGSOV        1.00E-20    1.00E-20    1.29E-21    1.29E-21    1.00E-20 
+CGDOV        1.00E-20    1.00E-20    1.29E-21    1.29E-21    1.00E-20 
+CGBOV        0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGD          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+NAME         M_M11       M_M14       M_M13       M_M12     
+MODEL        MbreakN-X   MbreakP-X   MbreakP-X   MbreakP-X 
+ID           1.33E-05   -1.33E-05   -6.45E-06   -6.45E-06 
+VGS          9.93E-01   -1.59E+00   -1.59E+00   -1.59E+00 
+VDS          9.80E+00   -5.20E+00   -1.59E+00   -1.59E+00 
+VBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+VTH          5.00E-01   -5.00E-01   -5.00E-01   -5.00E-01 
+VDSAT        4.93E-01   -1.09E+00   -1.09E+00   -1.09E+00 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+GM           5.41E-05    2.44E-05    1.18E-05    1.18E-05 
+GDS          1.22E-07    1.27E-07    6.34E-08    6.34E-08 
+GMB          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBD          2.75E-13    3.65E-13    5.78E-13    5.78E-13 
+CBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGSOV        1.00E-20    2.12E-21    1.06E-21    1.06E-21 
+CGDOV        1.00E-20    2.12E-21    1.06E-21    1.06E-21 
+CGBOV        0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGS          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGD          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .08
+

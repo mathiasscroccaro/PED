@@ -1,6 +1,0 @@
-.model MbreakN-X NMOS vto = 0.5 kp = 10e-6 lambda = 0.01 l = 1e-6 w = 10e-6 
-+ cbd = 1e-12 cgdo = 1e-15 cgso = 1e-15 
-*$
-.model MbreakP-X PMOS vto = -0.5 kp = 10e-6 lambda = 0.01 l = 1e-6 w = 10e-6 
-+ cbd = 1e-12 cgdo = 1e-15 cgso = 1e-15 
-*$
